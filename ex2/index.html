@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thời Khoá Biểu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      color: #0000FF;
+      margin: 20px 0;
+    }
+
+    .class-info {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+
+    .info-left, .info-right {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .info-item {
+      color: #0000FF;
+      font-size: 18px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+
+    .header-yellow {
+      background-color: yellow;
+      font-weight: bold;
+    }
+
+    .header-orange {
+      background-color: #FFA500;
+      font-weight: bold;
+    }
+
+    .empty-cell {
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+<h1>THỜI KHOÁ BIỂU</h1>
+
+<div class="class-info">
+  <div class="info-left">
+    <div class="info-item">Lớp: JAVABACKEND</div>
+    <div class="info-item">Giáo viên: DIENNB</div>
+    <div class="info-item">Phòng học: ONLINE</div>
+  </div>
+  <div class="info-right">
+    <div class="info-item">Thời gian học: 18h30 - 21h30</div>
+    <div class="info-item">Ngày học: Thứ 2, 4, 6</div>
+  </div>
+</div>
+
+<table>
+  <tr>
+    <td class="empty-cell" colspan="3"></td>
+    <th class="header-yellow">Thứ 2</th>
+    <th class="header-yellow">Thứ 4</th>
+    <th class="header-yellow">Thứ 6</th>
+  </tr>
+  <tr>
+    <th class="header-orange">Tuần</th>
+    <th class="header-orange">Ngày bắt đầu</th>
+    <th class="header-orange">Ngày kết thúc</th>
+    <th class="header-orange" colspan="3">Môn học</th>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>00/00/2025</td>
+    <td>99/99/2025</td>
+    <td>CF - T1, L1</td>
+    <td>CF - T2, L2</td>
+    <td>CF - T3, L3</td>
+  </tr>
+  <tr>
+    <td>02</td>
+    <td>08/09/2009</td>
+    <td>12/09/2009</td>
+    <td>CF - T4, L4</td>
+    <td>CF - Written Test</td>
+    <td>C - T1, L1</td>
+  </tr>
+  <tr>
+    <td>03</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+  </tr>
+</table>
+</body>
+</html>
